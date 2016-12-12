@@ -1,0 +1,26 @@
+@(postres:java.util.List[Postres])
+<html>
+	<head>
+	</head>
+		<body>
+ 			<table border =1>
+ 			<p>Postres</p>
+ 			<tr>
+ 			<td>Nombre   </td>
+ 			<td>Sabor    </td>
+ 			<td>Tamaño   </td>
+ 			<td>Precio   </td>
+ 			</tr>
+ 			
+ 			@for(postres <- postres){
+ 			<tr>
+ 			<td>@postres.nombre</td>
+ 			<td>@postres.sabor</td>
+ 			<td>@postres.tamanio</td>
+ 			<td>@postres.precio</td>
+ 			</tr>
+ 			}
+ 				
+			</table>
+		</body>
+</html>
